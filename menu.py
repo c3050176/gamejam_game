@@ -11,7 +11,7 @@ SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 800
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-pygame.display.set_caption("Main Menu")
+pygame.display.set_caption("Postal Worker Simulator")
 
 #game variables
 game = False
@@ -28,6 +28,8 @@ play_img = pygame.image.load("button_images/play_img.png").convert_alpha()
 #options_img = pygame.image.load("images/button_options.png").convert_alpha()
 quit_img = pygame.image.load("button_images/quit_img.png").convert_alpha()
 back_img = pygame.image.load('button_images/back_img.png').convert_alpha()
+background = pygame.image.load('button_images/background.png').convert_alpha()
+background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
 '''
 video_img = pygame.image.load('button_images/button_video.png').convert_alpha()
 audio_img = pygame.image.load('button_images/button_audio.png').convert_alpha()
@@ -54,8 +56,8 @@ def draw_text(text, font, text_col, x, y):
 run = True
 while run:
 
-  screen.fill((52, 78, 91))
-
+  #screen.fill((52, 78, 91))
+  screen.blit(background, (0, 0))
 
   '''
   #check if game is paused
