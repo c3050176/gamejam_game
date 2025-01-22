@@ -5,8 +5,8 @@ Core Mechanics:
 -Deliver
 (30s for each delivery, failed if there is no time left, wrong delivery also costs time)
 (3 warning mails will get you fired and the game is over:
-*failed delivery will get you a warning mail
-*customer complaint will get you a warning mail
+*failed deliveries will get you a warning mail
+*customer complaints will get you a warning mail
 *violating the company rules will get you a warning mail)
 
 
