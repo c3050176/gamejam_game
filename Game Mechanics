@@ -1,0 +1,30 @@
+Core Mechanics:
+-Check the information of the Package/Letter
+-Check the Houses of the potential customers
+-Buy evidences with time
+-Deliver
+(30s for each delivery, failed if there is no time left, wrong delivery also costs time)
+(3 warning mails will get you fired and the game is over:
+*failed delivery will get you a warning mail
+*customer complaint will get you a warning mail
+*violating the company rules will get you a warning mail)
+
+
+Elements Needed:
+-Start button/Quit button
+-Check package button
+-House view button
+-Time
+-Ask the neibour button
+-Deliver button
+-Next house
+-warning mail from the company
+
+
+Random Events:
+-Female customers in an Asian community are frequently complained about for having “hard-to-find addresses,” so the company set a rule to charge an additional delivery fee for every package in this area.
+  (follow the rules/ignore the rules and you may get a warning mail)
+-The player discovers a package that may be linked to illegal activities (e.g., containing discriminatory or violent content), but returning it directly might violate company policies.
+  (complete the delivery/choose not to deliver and you may get a warning mail)
+
+
