@@ -29,6 +29,10 @@ package_img = pygame.image.load("button_images/play_img.png").convert_alpha()
 house_img = pygame.image.load("button_images/quit_img.png").convert_alpha()
 neighbour_img = pygame.image.load('button_images/back_img.png').convert_alpha()
 
+# Generate house or package as background
+background = pygame.image.load('button_images/background.png').convert_alpha()
+background = pygame.transform.scale(background, (SCREEN_WIDTH, SCREEN_HEIGHT))
+
 
 package_button = button.Button(800, 300, package_img, 0.3)
 house_button = button.Button(800, 450, house_img, 0.3)
@@ -72,18 +76,16 @@ while run:
     draw_text("Press SPACE to pause", font, TEXT_COL, 160, 250
   '''
 
-  if not game:
+  if game:
     if menu_state == "main":
       draw_text("best game ever", font, TEXT_COL, 100, 100)
       if package_button.draw(screen):
         game = True
       if house_button.draw(screen):
         run = False
-  if game:
-    draw_text("insert game playing", font, TEXT_COL, 100,100)
-    if neighbour_button.draw(screen):
-      game = False
-  menu_state = "main"
+
+   #if neighbour_button.draw(screen):
+   #   game = False
 
 
   #event handler
