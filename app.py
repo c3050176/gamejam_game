@@ -1,2 +1,5 @@
 import pygame
-print("Hello world")
+import config
+
+#if __name__ == '__main__':
+#    app.run()
